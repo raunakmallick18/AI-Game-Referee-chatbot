@@ -86,7 +86,7 @@ def resolve_round(user_move: str, tool_context: ToolContext) -> dict:
 
 referee = LlmAgent(
     name="rps_referee",
-    model="models/gemini-pro",
+    model="gemini-3-pro-preview",
     description="Rock-Paper-Scissors-Plus Game Referee Agent",
     tools=[resolve_round],
     instruction=(
